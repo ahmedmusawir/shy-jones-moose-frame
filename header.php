@@ -111,22 +111,9 @@
 
 		<?php // if ( is_front_page() || is_home() || is_single() || is_archive() || is_search() ) : ?>
 		<?php if ( is_front_page() || is_single() || is_archive() || is_search() ) : ?>
-			<!-- <img class="img-responsive" src="http://tiana/wp-content/uploads/2016/01/tiana-header-img-1-noise-light-2.jpg" alt="tiana img"> -->
+
 			<img class="img-responsive" src="<?php echo $front_header_image; ?>" alt="tiana img">
-<!-- 
-			<div class="header-text-container">
-				<article class="header-text-box">
-					<h3>Get Paid to Be You!</h3>
-					<h4>
-						Learn how to Create<br>
-						Online Systems that work<br>
-						for you FREEing you up <br>
-						to have more FUN <br>
-						and make more MONEY! <br><br>
-						<em>I can show you how!</em>
-					</h4>
-				</article>			
-			</div> -->
+
 		<?php elseif ( is_home() ) : ?>	
 			
 			<img class="img-responsive" src="<?php echo $blog_header_image; ?>" alt="tiana img">
@@ -137,7 +124,7 @@
 	
 
 	</header>
-	<section class="header-form-section">
+<!-- 	<section class="header-form-section">
 
 		<div class="header-form-container container">
 			<div class="col-md-6">
@@ -163,7 +150,7 @@
 		</div>
 	</section>
 
-
+ -->
 
 
 

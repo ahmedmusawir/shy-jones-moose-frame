@@ -17,7 +17,12 @@
 // $tiana-primary: #5FC5BF;
 // $tiana-gray: #242424;
 
-$tiana-primary: #0f4c73;
+$tiana-primary: #bfa26a;
+
+$tiana-golden: #bfa26a;
+
+$tiana-pink: #c5197f;
+// $tiana-primary: #0f4c73;
 $tiana-gray: #242424;
 $tiana-orange: #ed6e42;
 $tiana-light-blue: #2787b1 ;
@@ -34,6 +39,7 @@ $tiana-light-blue: #2787b1 ;
 @import url(https://fonts.googleapis.com/css?family=Poiret+One);
 // @import url(https://fonts.googleapis.com/css?family=Cabin:400,400italic,500,500italic,600,600italic,700,700italic);
 @import url(https://fonts.googleapis.com/css?family=Muli:400,300,300italic,400italic);
+@import url(https://fonts.googleapis.com/css?family=Homemade+Apple);
 
 html { 
  
@@ -41,7 +47,7 @@ html {
 
 body {
 	// font-family: 'NEOTERIC', sans-serif;
-
+	// display: none;
 }
 
 /**
@@ -162,10 +168,18 @@ body {
 				font-weight: 300;
 				// border: 1px solid red;
 
-				@media ( max-width: 1200px ) {
+				@media ( max-width: 1315px ) {
+
+					font-size: 2rem;
+				}
+				@media ( max-width: 1140px ) {
 
 					font-size: 1.7rem;
 				}
+				@media ( max-width: 1026px ) {
+
+					font-size: 1.5rem;
+				}			
 
 				&:hover {
 					color: $tiana-primary;
@@ -228,7 +242,8 @@ img {
 	position: relative;
 
 	.logo {
-		position: fixed;
+		position: absolute;
+		// position: fixed;
 		z-index: 2;
 
 		@media ( max-width: 679px ) {
@@ -237,6 +252,14 @@ img {
 			// clear: both !important;
 			position: relative;	
 		}
+		@media ( max-width: 991px ) {
+
+			width: 40%;
+		}	
+		@media ( max-width: 679px ) {
+
+			width: 60%;
+		}					
 	}
 	.header-social {
 		padding-top: .5rem;
@@ -271,239 +294,84 @@ img {
 	}
 }
 
-/**
- *
- * Page Header Style
- *
- */
-#front-pg-header {
-	position: relative;
-	z-index: -1;
-	
-	// border: 1px solid red;
-	margin-top: -.9rem;
-
-	// .header-text-container {
-	// 	// box-shadow: 0px 0px 3px lighten( $tiana-gray, 20% );
-	// 	.header-text-box {
-
-	// 		// @include background(linear-gradient( rgba( $silver, .8 ), rgba( $tiana-primary, .5 ) ) left repeat);
-	// 		font-family: 'Muli', sans-serif;
-	// 		position: absolute;
-	// 		top: -30px;
-	// 		left: 0px;
-
-	// 		width: 250px;
-	// 		height: 130px;
-	// 		padding-left: 3rem;
-	// 		padding-right: .5rem;
-	// 		padding-top: 2rem;
-	// 		padding-bottom: 2rem;
-
-	// 		h4 {
-	// 			color: lighten( $tiana-gray, 20% );
-	// 			font-size: 1rem;
-	// 		}
-	// 		h3 {
-	// 			font-size: 1.2rem;
-	// 		}
-				
-	// 		@media ( min-width: 500px ) {
-
-	// 			@include background(linear-gradient( rgba( $silver, .8 ), rgba( $tiana-primary, .5 ) ) left repeat);
-				
-	// 				position: absolute;
-	// 				top: 0px;
-	// 				left: 0px;
-
-	// 				width: 250px;
-	// 				height: 180px;
-	// 				padding-left: 3rem;
-	// 				padding-right: .5rem;
-	// 				padding-top: 2rem;
-	// 				padding-bottom: 2rem;
-
-	// 				h4 {
-	// 					color: lighten( $tiana-gray, 20% );
-	// 					font-size: 1.2rem;
-	// 				}
-	// 				h3 {
-	// 					font-size: 1.6rem;
-	// 				}				
-	// 		}	
-
-	// 		@media ( min-width: 700px ) {
-
-	// 		@include background(linear-gradient( rgba( $silver, .8 ), rgba( $tiana-primary, .5 ) ) left repeat);
-			
-	// 			position: absolute;
-	// 			top: 20px;
-	// 			left: 70px;
-
-	// 			width: 250px;
-	// 			height: 190px;
-	// 			padding-left: 3rem;
-	// 			padding-right: .5rem;
-	// 			padding-top: .6rem;
-	// 			padding-bottom: 2rem;
-
-	// 			h4 {
-	// 				color: lighten( $tiana-gray, 20% );
-	// 				font-size: 1.5rem;
-	// 			}
-	// 			h3 {
-	// 				font-size: 2rem;
-	// 			}				
-	// 		}		
-
-	// 		@media ( min-width: 768px ) {
-			
-	// 			@include background(linear-gradient( rgba( $silver, .8 ), rgba( $tiana-primary, .5 ) ) left repeat);
-				
-	// 			position: absolute;
-	// 			top: 25px;
-	// 			left: 50px;
-	// 				width: 350px;
-	// 				height: 210px;
-	// 				padding-left: 5rem;
-	// 				padding-right: .5rem;
-	// 				padding-top: 2rem;
-	// 				padding-bottom: 2rem;
-
-	// 				h4 {
-	// 					color: lighten( $tiana-gray, 20% );
-						
-	// 				}
-	// 				h3 {
-	// 					font-size: 2.5rem;
-	// 				}
-				
-	// 		}
-
-	// 		@media ( min-width: 1100px ) {
-			
-	// 			@include background(linear-gradient( rgba( $silver, .8 ), rgba( $tiana-primary, .5 ) ) left repeat);
-				
-	// 			position: absolute;
-	// 			top: 80px;
-	// 			left: 150px;
-	// 				width: 350px;
-	// 				height: 230px;
-	// 				padding-left: 3rem;
-	// 				padding-right: .5rem;
-	// 				padding-top: 2rem;
-	// 				padding-bottom: 2rem;
-
-	// 				h4 {
-	// 					color: lighten( $tiana-gray, 20% );
-
-	// 				}
-				
-	// 		}
-
-	// 		@media ( min-width: 1400px ) {
-			
-	// 			@include background(linear-gradient( rgba( $silver, .8 ), rgba( $tiana-primary, .5 ) ) left repeat);
-				
-	// 			position: absolute;
-	// 			top: 80px;
-	// 			left: 150px;
-	// 				width: 450px;
-	// 				height: 300px;
-	// 				padding-left: 5rem;
-	// 				padding-right: .5rem;
-	// 				padding-top: 2rem;
-	// 				padding-bottom: 2rem;
-
-	// 				h4 {
-	// 					color: lighten( $tiana-gray, 20% );
-	// 					font-size: 2rem;
-
-	// 				}
-	// 				h3 {
-	// 					font-size: 3rem;
-	// 				}
-				
-	// 		}
-
-	// 		@media ( min-width: 1600px ) {
-	
-	// 			@include background(linear-gradient( rgba( $silver, .8 ), rgba( $tiana-primary, .5 ) ) left repeat);
-		
-	// 			position: absolute;
-	// 			top: 120px;
-	// 			left: 250px;
-	// 				width: 550px;
-	// 				height: 330px;
-	// 				padding-left: 8rem;
-	// 				padding-right: .5rem;
-	// 				padding-top: 3rem;
-	// 				padding-bottom: 2rem;
-
-	// 				h4 {
-	// 					color: lighten( $tiana-gray, 20% );
-	// 					font-size: 2.5rem;
-
-	// 				}
-	// 				h3 {
-	// 					font-size: 3.5rem;
-	// 				}
-	// 		}
-	// 	}	
-	// }
-} 
 
 /**
  *
- * Header form style
+ * Front Page Styles
  *
  */
-.header-form-section {
-	// border: 1px solid red;
-	padding-top: 3rem;
-	padding-bottom: 1rem;
-	background-color: $tiana-primary;
 
+.block-1 {
 
-	.header-form-container {
-		.header-form {
-			// border: 1px solid red;
-			// padding-top: 2rem;
-			margin-top: -1.3rem;
-		}
-		.header-from-submit {
-			background-color: lighten( $tiana-orange, 0% );
-			color: white;
-			width: 60px;
-			height: 60px;
-			border-radius: 50%;
+	border-top: 2rem solid black;
+		// @include linear-gradient( to top, rgba( white, .8 ), rgba( $tiana-primary, .5 )  ) ;
+
+	.content-wrapper {
+		background: url("/wp-content/uploads/2016/05/block-1-bg.jpg");
+		// border: 1rem solid red;
+
+		.block-1-header {
+			font-family: 'Homemade Apple', cursive;
+			font-size: 6rem;
+			text-align: center;
+			padding-top: 10rem;
+			padding-bottom: 5rem;
+			color: lighten( black, 40% );
 		}
 
-		h3 {
-			font-family: 'Muli', sans-serif;
-			// font-family: 'Josefin Sans', sans-serif;
-			font-size: 2rem;
-			color: white;
-			margin-top: 0rem;
-			// padding-top: 1rem;
-			// border: 1px solid red;
+		.left-text {
+
+			h2 {
+				font-size: 7rem;
+				font-weight: 900;
+				color: $tiana-primary;
+				float: right;
+				border-right: 1rem solid $tiana-primary;
+				padding-bottom: 10rem;
+				padding-top: 10rem;
+				padding-right: 5rem;
+			}
 
 		}
+
+		.right-text {
+				padding-top: 2rem;
+
+			h3 {
+				font-weight: 300;
+				font-size: 3rem;
+				color: gray;
+			}
+
+			ul {
+				padding-top: 5rem;
+
+				li {
+					font-size: 2rem;
+					color: lighten( gray, 15% );
+					font-weight: 500;
+				}
+			}			
+		}
+
+
 	}
 }
-
 
 /**
  *
  * Main Content
  *
  */
+#content {
+	display: none;
+
+} 
 
 .content-wrapper {
 
 	background-color: rgba( darken( $steel, 0% ), .85);
 	padding-bottom: 5rem;
-
 
 } 
 .content-area {
@@ -592,20 +460,20 @@ img {
 	 */
 	
 	/* These are technically the same, but use both */
-	  overflow-wrap: break-word;
-	  word-wrap: break-word;
+	  // overflow-wrap: break-word;
+	  // word-wrap: break-word;
 
-	  -ms-word-break: break-all;
+	  // -ms-word-break: break-all;
 	  /* This is the dangerous one in WebKit, as it breaks things wherever */
-	  word-break: break-all;
+	  // word-break: break-all;
 	  /* Instead use this non-standard one: */
-	  word-break: break-word;
+	  // word-break: break-word;
 
 	  /* Adds a hyphen where the word breaks, if supported (No Blink) */
-	  -ms-hyphens: auto;
-	  -moz-hyphens: auto;
-	  -webkit-hyphens: auto;
-	  hyphens: auto;    
+	  // -ms-hyphens: auto;
+	  // -moz-hyphens: auto;
+	  // -webkit-hyphens: auto;
+	  // hyphens: auto;    
 }
 
 /**

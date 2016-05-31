@@ -23,6 +23,7 @@ If you want to add your own css code, please do it in /css/custom.css
 @import url(https://fonts.googleapis.com/css?family=Raleway:400,500,600,700,800,300,200,100);
 @import url(https://fonts.googleapis.com/css?family=Poiret+One);
 @import url(https://fonts.googleapis.com/css?family=Muli:400,300,300italic,400italic);
+@import url(https://fonts.googleapis.com/css?family=Homemade+Apple);
 .alignnone {
   margin: 5px 20px 20px 0; }
 
@@ -5965,14 +5966,14 @@ button.close {
   .navbar .navbar-brand {
     color: #d5d5d5; }
   .navbar .navbar-toggle .icon-bar {
-    color: #0f4c73;
-    background-color: #0f4c73; }
+    color: #bfa26a;
+    background-color: #bfa26a; }
   .navbar .nav li a {
     -webkit-transition: all 0.3s ease-in-out;
     -moz-transition: all 0.3s ease-in-out;
     transition: all 0.3s ease-in-out; }
     .navbar .nav li a:hover {
-      border-bottom: 4px solid #0f4c73; }
+      border-bottom: 4px solid #bfa26a; }
   .navbar .dropdown-menu {
     background-color: #101010; }
     .navbar .dropdown-menu .current-menu-item a {
@@ -5985,13 +5986,19 @@ button.close {
     color: #7c7c7c;
     font-size: 2.5rem;
     font-weight: 300; }
-    @media (max-width: 1200px) {
+    @media (max-width: 1315px) {
+      .navbar #menu-menu-1 li a {
+        font-size: 2rem; } }
+    @media (max-width: 1140px) {
       .navbar #menu-menu-1 li a {
         font-size: 1.7rem; } }
+    @media (max-width: 1026px) {
+      .navbar #menu-menu-1 li a {
+        font-size: 1.5rem; } }
     .navbar #menu-menu-1 li a:hover {
-      color: #0f4c73; }
+      color: #bfa26a; }
   .navbar #menu-menu-1 .current-menu-item a {
-    color: #0f4c73;
+    color: #bfa26a;
     border-bottom: 4px solid #2787b1; }
 
 img {
@@ -6020,12 +6027,18 @@ img {
   padding-bottom: 1rem;
   position: relative; }
   .header-logo-social .logo {
-    position: fixed;
+    position: absolute;
     z-index: 2; }
     @media (max-width: 679px) {
       .header-logo-social .logo {
         width: 100%;
         position: relative; } }
+    @media (max-width: 991px) {
+      .header-logo-social .logo {
+        width: 40%; } }
+    @media (max-width: 679px) {
+      .header-logo-social .logo {
+        width: 60%; } }
   .header-logo-social .header-social {
     padding-top: .5rem; }
     @media (min-width: 480px) {
@@ -6034,12 +6047,12 @@ img {
     .header-logo-social .header-social i {
       font-size: 3rem;
       padding-right: 2rem;
-      color: #156aa0;
+      color: #ceb88e;
       -webkit-transition: all 1s ease-in-out;
       -moz-transition: all 1s ease-in-out;
       transition: all 1s ease-in-out; }
       .header-logo-social .header-social i:hover {
-        color: #031019;
+        color: #886e3b;
         -webkit-transition-property: -webkit-transform;
         -moz-transition-property: -moz-transform;
         transition-property: transform;
@@ -6061,42 +6074,50 @@ img {
 
 /**
  *
- * Page Header Style
+ * Front Page Styles
  *
  */
-#front-pg-header {
-  position: relative;
-  z-index: -1;
-  margin-top: -.9rem; }
-
-/**
- *
- * Header form style
- *
- */
-.header-form-section {
-  padding-top: 3rem;
-  padding-bottom: 1rem;
-  background-color: #0f4c73; }
-  .header-form-section .header-form-container .header-form {
-    margin-top: -1.3rem; }
-  .header-form-section .header-form-container .header-from-submit {
-    background-color: #ed6e42;
-    color: white;
-    width: 60px;
-    height: 60px;
-    border-radius: 50%; }
-  .header-form-section .header-form-container h3 {
-    font-family: 'Muli', sans-serif;
-    font-size: 2rem;
-    color: white;
-    margin-top: 0rem; }
+.block-1 {
+  border-top: 2rem solid black; }
+  .block-1 .content-wrapper {
+    background: url("/wp-content/uploads/2016/05/block-1-bg.jpg"); }
+    .block-1 .content-wrapper .block-1-header {
+      font-family: 'Homemade Apple', cursive;
+      font-size: 6rem;
+      text-align: center;
+      padding-top: 10rem;
+      padding-bottom: 5rem;
+      color: #666666; }
+    .block-1 .content-wrapper .left-text h2 {
+      font-size: 7rem;
+      font-weight: 900;
+      color: #bfa26a;
+      float: right;
+      border-right: 1rem solid #bfa26a;
+      padding-bottom: 10rem;
+      padding-top: 10rem;
+      padding-right: 5rem; }
+    .block-1 .content-wrapper .right-text {
+      padding-top: 2rem; }
+      .block-1 .content-wrapper .right-text h3 {
+        font-weight: 300;
+        font-size: 3rem;
+        color: gray; }
+      .block-1 .content-wrapper .right-text ul {
+        padding-top: 5rem; }
+        .block-1 .content-wrapper .right-text ul li {
+          font-size: 2rem;
+          color: #a6a6a6;
+          font-weight: 500; }
 
 /**
  *
  * Main Content
  *
  */
+#content {
+  display: none; }
+
 .content-wrapper {
   background-color: rgba(102, 102, 102, 0.85);
   padding-bottom: 5rem; }
@@ -6143,22 +6164,13 @@ img {
    *
    */
   /* These are technically the same, but use both */
-  overflow-wrap: break-word;
-  word-wrap: break-word;
-  -ms-word-break: break-all;
   /* This is the dangerous one in WebKit, as it breaks things wherever */
-  word-break: break-all;
   /* Instead use this non-standard one: */
-  word-break: break-word;
-  /* Adds a hyphen where the word breaks, if supported (No Blink) */
-  -ms-hyphens: auto;
-  -moz-hyphens: auto;
-  -webkit-hyphens: auto;
-  hyphens: auto; }
+  /* Adds a hyphen where the word breaks, if supported (No Blink) */ }
   .page-header h1 {
     padding-left: 1.8rem;
     font-size: 3rem;
-    color: #0f4c73; }
+    color: #bfa26a; }
 
 /**
  *
@@ -6180,10 +6192,10 @@ img {
   /* Instead use this non-standard one: */
   /* Adds a hyphen where the word breaks, if supported (No Blink) */ }
   .blog-post .entry-header {
-    background: -webkit-linear-gradient(rgba(255, 255, 255, 0.8), rgba(15, 76, 115, 0.9)) left repeat;
-    background: linear-gradient(rgba(255, 255, 255, 0.8), rgba(15, 76, 115, 0.9)) left repeat;
+    background: -webkit-linear-gradient(rgba(255, 255, 255, 0.8), rgba(191, 162, 106, 0.9)) left repeat;
+    background: linear-gradient(rgba(255, 255, 255, 0.8), rgba(191, 162, 106, 0.9)) left repeat;
     border: 1px solid white;
-    border-bottom: 1px solid #0f4c73;
+    border-bottom: 1px solid #bfa26a;
     padding-bottom: 2rem; }
     .blog-post .entry-header h1, .blog-post .entry-header h2 {
       font-family: 'Muli', sans-serif;
@@ -6256,9 +6268,9 @@ img {
   .blog-post .moretag {
     display: block;
     margin-top: 3rem;
-    border: 1px solid #0f4c73;
+    border: 1px solid #bfa26a;
     background-color: transparent;
-    color: #0f4c73;
+    color: #bfa26a;
     -webkit-transition: all 1s ease-in-out;
     -moz-transition: all 1s ease-in-out;
     transition: all 1s ease-in-out; }
@@ -6293,7 +6305,7 @@ img {
  *
  */
 .single-page h1, .single-page h2, .single-page h3, .single-page h4, .single-page h5 {
-  color: #125b8a;
+  color: #c7ad7c;
   font-size: 3.5rem;
   padding-left: 2.7rem;
   padding-right: 2rem;
@@ -6343,8 +6355,8 @@ img {
  */
 .praise-block {
   margin-top: 4rem;
-  background: -webkit-linear-gradient(rgba(239, 239, 239, 0.8), rgba(15, 76, 115, 0.5)) left repeat;
-  background: linear-gradient(rgba(239, 239, 239, 0.8), rgba(15, 76, 115, 0.5)) left repeat;
+  background: -webkit-linear-gradient(rgba(239, 239, 239, 0.8), rgba(191, 162, 106, 0.5)) left repeat;
+  background: linear-gradient(rgba(239, 239, 239, 0.8), rgba(191, 162, 106, 0.5)) left repeat;
   -webkit-transition: all 1s ease-in-out;
   -moz-transition: all 1s ease-in-out;
   transition: all 1s ease-in-out;
@@ -6354,21 +6366,21 @@ img {
   .praise-block .no-image {
     padding-left: 5rem; }
   .praise-block .icon-praise i {
-    color: #0f4c73; }
+    color: #bfa26a; }
   .praise-block .praise-title a {
-    color: #092e46; }
+    color: #ac8b4a; }
   .praise-block:hover, .praise-block:active {
     background-color: #242424; }
     .praise-block:hover .icon-praise i, .praise-block:active .icon-praise i {
       color: #eeeeee; }
     .praise-block:hover .praise-text p, .praise-block:active .praise-text p {
-      color: #90cbf1; }
+      color: white; }
     .praise-block:hover .praise-text h3, .praise-block:active .praise-text h3 {
       color: white; }
     .praise-block:hover .praise-title, .praise-block:active .praise-title {
       color: white; }
       .praise-block:hover .praise-title a, .praise-block:active .praise-title a {
-        color: #90cbf1; }
+        color: white; }
   .praise-block img {
     float: left;
     padding: 2rem;
@@ -6381,7 +6393,7 @@ img {
     padding: 2rem;
     padding-top: 1rem; }
   .praise-block .praise-text h3 {
-    color: #0f4c73; }
+    color: #bfa26a; }
   .praise-block .praise-title {
     font-weight: 700;
     font-size: 2rem;
@@ -6430,19 +6442,19 @@ img {
       -webkit-transition-delay: 0.5s;
       -moz-transition-delay: 0.5s;
       transition-delay: 0.5s;
-      background-color: #0f4c73; }
+      background-color: #bfa26a; }
       .entry-content .contact-top-row .contact-social li:hover a {
         color: #242424; }
     .entry-content .contact-top-row .contact-social li a {
       font-size: 2rem;
-      color: #0f4c73; }
+      color: #bfa26a; }
   .entry-content .contact-top-row .contact-social p {
     font-size: 2.5rem;
-    color: #0f4c73;
+    color: #bfa26a;
     padding-top: 2rem; }
 .entry-content .the-form {
-  background: -webkit-linear-gradient(#0f4c73, #2787b1) left repeat;
-  background: linear-gradient(#0f4c73, #2787b1) left repeat;
+  background: -webkit-linear-gradient(#bfa26a, #2787b1) left repeat;
+  background: linear-gradient(#bfa26a, #2787b1) left repeat;
   padding-top: 4rem;
   padding-bottom: 4rem;
   margin-bottom: 10rem;
@@ -6505,8 +6517,8 @@ img {
   padding-bottom: 2rem;
   padding-left: 2rem;
   padding-right: 2rem;
-  background: -webkit-linear-gradient(rgba(239, 239, 239, 0.8), rgba(15, 76, 115, 0.5)) left repeat;
-  background: linear-gradient(rgba(239, 239, 239, 0.8), rgba(15, 76, 115, 0.5)) left repeat; }
+  background: -webkit-linear-gradient(rgba(239, 239, 239, 0.8), rgba(191, 162, 106, 0.5)) left repeat;
+  background: linear-gradient(rgba(239, 239, 239, 0.8), rgba(191, 162, 106, 0.5)) left repeat; }
   .widget .widget-title {
     font-size: 3rem;
     font-weight: 500;
@@ -6566,7 +6578,7 @@ img {
       transition: all 0.5s ease-in-out; }
       .widget ul li:hover {
         color: #eeeeee;
-        background-color: #0f4c73; }
+        background-color: #bfa26a; }
       .widget ul li a {
         display: block;
         color: #0b0b0b;
@@ -6600,7 +6612,7 @@ img {
     #footer-main .copyright a {
       color: #777777; }
       #footer-main .copyright a:hover {
-        color: #0f4c73; }
+        color: #bfa26a; }
   #footer-main .footer-body {
     padding-top: 3rem; }
     #footer-main .footer-body .footer-form {
