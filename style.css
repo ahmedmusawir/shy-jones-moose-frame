@@ -5947,6 +5947,9 @@ button.close {
 
   .navbar-header {
     float: none; } }
+@media (min-width: 679px) and (max-width: 767px) {
+  .navbar-collapse {
+    margin-top: 5rem; } }
 /**
  *
  * Bootstrap Navigation
@@ -5995,6 +5998,9 @@ button.close {
     @media (max-width: 1026px) {
       .navbar #menu-menu-1 li a {
         font-size: 1.5rem; } }
+    @media (min-width: 768px) and (max-width: 991px) {
+      .navbar #menu-menu-1 li a {
+        padding-top: 10rem; } }
     .navbar #menu-menu-1 li a:hover {
       color: #bfa26a; }
   .navbar #menu-menu-1 .current-menu-item a {
@@ -6080,7 +6086,8 @@ img {
 .block-1 {
   border-top: 2rem solid black; }
   .block-1 .content-wrapper {
-    background: url("/wp-content/uploads/2016/05/block-1-bg.jpg"); }
+    background: url("/wp-content/uploads/2016/05/block-1-bg.jpg");
+    padding-bottom: 5rem; }
     .block-1 .content-wrapper .block-1-header {
       font-family: 'Homemade Apple', cursive;
       font-size: 6rem;
@@ -6110,6 +6117,125 @@ img {
           color: #a6a6a6;
           font-weight: 500; }
 
+.block-2 {
+  background: url("/wp-content/uploads/2016/06/workwithme-personal-coach-bg.jpg") no-repeat center center fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover; }
+  .block-2 .content-wrapper {
+    background-color: rgba(255, 255, 255, 0.4);
+    background-image: -webkit-linear-gradient(left, rgba(255, 255, 255, 0.4), rgba(0, 0, 0, 0.7));
+    background-image: linear-gradient(to right,rgba(255, 255, 255, 0.4), rgba(0, 0, 0, 0.7));
+    color: white;
+    padding-top: 10rem;
+    padding-bottom: 10rem; }
+  .block-2 .right-text .lovely {
+    font-family: 'Homemade Apple', cursive;
+    font-size: 3rem; }
+  .block-2 .right-text .special {
+    font-size: 3rem;
+    font-weight: 700; }
+  .block-2 .right-text h2 {
+    font-weight: 300;
+    font-size: 3rem;
+    line-height: 1.5;
+    color: #f8cbe6; }
+  .block-2 .right-text h3 {
+    font-weight: 300;
+    font-size: 2.8rem;
+    line-height: 1.5; }
+  .block-2 .right-text .btn {
+    margin-top: 5rem;
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+    padding-left: 5rem;
+    padding-right: 5rem;
+    background-color: transparent;
+    border: 1rem solid #981362; }
+    .block-2 .right-text .btn:hover {
+      background-color: #981362; }
+
+.block-3 .content-wrapper {
+  background: url("/wp-content/uploads/2016/05/block-1-bg.jpg");
+  padding-bottom: 5rem; }
+  .block-3 .content-wrapper .block-3-header {
+    font-family: 'Homemade Apple', cursive;
+    font-size: 6rem;
+    text-align: center;
+    padding-top: 10rem;
+    padding-bottom: 5rem;
+    color: #666666; }
+  .block-3 .content-wrapper .left-image {
+    padding-right: 3rem;
+    padding-top: 5rem; }
+    .block-3 .content-wrapper .left-image img {
+      box-shadow: 2px 2px 6px #777777; }
+  .block-3 .content-wrapper .right-text {
+    padding-top: 2rem; }
+    .block-3 .content-wrapper .right-text h3 {
+      font-weight: 300;
+      font-size: 3rem;
+      color: #f087c5; }
+    .block-3 .content-wrapper .right-text ul {
+      padding-top: 5rem; }
+      .block-3 .content-wrapper .right-text ul li {
+        font-size: 2rem;
+        color: #a6a6a6;
+        font-weight: 500; }
+
+.block-4 {
+  background: url("/wp-content/uploads/2016/06/block-4-bg.jpg") no-repeat center center fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover; }
+  .block-4 .content-wrapper {
+    background-image: -webkit-linear-gradient(white 0, rgba(191, 162, 106, 0.7) 50%, rgba(172, 139, 74, 0.7) 50%);
+    background-image: linear-gradient(to   , rgba(191, 162, 106, 0.7) 50%, rgba(172, 139, 74, 0.7) 50%); }
+    .block-4 .content-wrapper .text-content {
+      text-align: center; }
+      .block-4 .content-wrapper .text-content h1 {
+        font-family: 'Homemade Apple', cursive;
+        font-size: 4rem;
+        text-align: center;
+        padding-top: 3rem;
+        padding-bottom: 5rem;
+        color: #666666; }
+      .block-4 .content-wrapper .text-content h2 {
+        font-variant: small-caps;
+        padding-top: 9rem;
+        font-size: 4rem;
+        color: gray; }
+    .block-4 .content-wrapper .container-fluid {
+      padding-bottom: 10rem;
+      padding-top: 5rem; }
+      .block-4 .content-wrapper .container-fluid img {
+        -webkit-transition: all 2s ease-in-out;
+        -moz-transition: all 2s ease-in-out;
+        transition: all 2s ease-in-out; }
+        .block-4 .content-wrapper .container-fluid img:hover {
+          -webkit-transform: translateY(50px);
+          -moz-transform: translateY(50px);
+          -ms-transform: translateY(50px);
+          -o-transform: translateY(50px);
+          transform: translateY(50px);
+          -webkit-transform: scale(0.9) rotate(-3deg);
+          -moz-transform: scale(0.9) rotate(-3deg);
+          -ms-transform: scale(0.9) rotate(-3deg);
+          -o-transform: scale(0.9) rotate(-3deg);
+          transform: scale(0.9) rotate(-3deg);
+          -webkit-transform-origin: center top;
+          -moz-transform-origin: center top;
+          -ms-transform-origin: center top;
+          -o-transform-origin: center top;
+          transform-origin: center top;
+          -webkit-transform-style: preserve-3d;
+          -moz-transform-style: preserve-3d;
+          -ms-transform-style: preserve-3d;
+          -o-transform-style: preserve-3d;
+          transform-style: preserve-3d; }
+
 /**
  *
  * Main Content
@@ -6117,13 +6243,6 @@ img {
  */
 #content {
   display: none; }
-
-.content-wrapper {
-  background-color: rgba(102, 102, 102, 0.85);
-  padding-bottom: 5rem; }
-
-.content-area {
-  padding: 0; }
 
 .site-main {
   padding: 0;
@@ -6206,16 +6325,16 @@ img {
       padding-left: 2rem;
       padding-right: 1rem; }
       .blog-post .entry-header h1 a, .blog-post .entry-header h2 a {
-        color: #337ab7;
+        color: #ac8b4a;
         text-decoration: none; }
         .blog-post .entry-header h1 a:hover, .blog-post .entry-header h2 a:hover {
-          color: white; }
+          color: #333333; }
     .blog-post .entry-header .entry-meta {
       padding-bottom: 1rem;
       padding-left: 2rem;
       color: #eeeeee; }
       .blog-post .entry-header .entry-meta a {
-        color: #b4d1ea; }
+        color: white; }
   .blog-post .featured-img {
     overflow: hidden; }
     .blog-post .featured-img img {
@@ -6275,7 +6394,7 @@ img {
     -moz-transition: all 1s ease-in-out;
     transition: all 1s ease-in-out; }
     .blog-post .moretag:hover {
-      background-color: #ff6b3f;
+      background-color: #262626;
       color: white;
       border-color: white; }
 
@@ -6355,6 +6474,7 @@ img {
  */
 .praise-block {
   margin-top: 4rem;
+  margin-bottom: 4rem;
   background: -webkit-linear-gradient(rgba(239, 239, 239, 0.8), rgba(191, 162, 106, 0.5)) left repeat;
   background: linear-gradient(rgba(239, 239, 239, 0.8), rgba(191, 162, 106, 0.5)) left repeat;
   -webkit-transition: all 1s ease-in-out;
@@ -6453,20 +6573,23 @@ img {
     color: #bfa26a;
     padding-top: 2rem; }
 .entry-content .the-form {
-  background: -webkit-linear-gradient(#bfa26a, #2787b1) left repeat;
-  background: linear-gradient(#bfa26a, #2787b1) left repeat;
+  background: -webkit-linear-gradient(#9a7c42, white) left repeat;
+  background: linear-gradient(#9a7c42, white) left repeat;
   padding-top: 4rem;
   padding-bottom: 4rem;
   margin-bottom: 10rem;
   margin-top: 5rem; }
+  .entry-content .the-form p {
+    color: black; }
   .entry-content .the-form .wpcf7-textarea {
     height: 16rem; }
   .entry-content .the-form .wpcf7-submit {
     width: 20rem;
     float: right;
-    background-color: #ed6e42 !important; }
+    background-color: #bfa26a !important;
+    border: 1px solid #bfa26a; }
     .entry-content .the-form .wpcf7-submit:hover {
-      background-color: #e64b16 !important; }
+      background-color: #ac8b4a !important; }
 
 /**
  *
@@ -6600,9 +6723,8 @@ img {
  *
  */
 #footer-main {
-  background: -webkit-linear-gradient(#ed6e42, #333333) left repeat;
-  background: linear-gradient(#ed6e42, #333333) left repeat;
-  margin-top: 4rem; }
+  background: -webkit-linear-gradient(#bfa26a, #333333) left repeat;
+  background: linear-gradient(#bfa26a, #333333) left repeat; }
   #footer-main .copyright {
     padding: 1rem;
     background-color: #4d4d4d; }

@@ -124,33 +124,6 @@
 	
 
 	</header>
-<!-- 	<section class="header-form-section">
-
-		<div class="header-form-container container">
-			<div class="col-md-6">
-				<h3 class="form-section-text pull-right">
-				Free Your Body, Life & Business.<br>
-				Get Your FREE Inspirational Workbook Now ...
-				</h3>
-			</div>
-			<div class="col-md-6">
-				<form class="form-inline header-form" role="form">
-				  <div class="form-group">
-				    <input type="email" class="form-control" id="email" placeholder="First Name">
-				  </div>
-				  <div class="form-group">
-				    <input type="password" class="form-control" id="pwd" placeholder="Email">
-				  </div>
-				  
-				  <button type="submit" class="btn btn-default header-from-submit">Get<br> it!</button>
-				</form>
-			</div>
-
-			
-		</div>
-	</section>
-
- -->
 
 
 

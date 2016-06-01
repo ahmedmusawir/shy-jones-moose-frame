@@ -71,10 +71,10 @@ body {
     }
 }
 
-@media (max-width: 767px) {
+@media (min-width: 679px) and (max-width: 767px) {
 	.navbar-collapse {
 		// border: 1px solid red;
-		// margin-top: 5rem;
+		margin-top: 5rem;
 	}
 }
 
@@ -180,6 +180,11 @@ body {
 
 					font-size: 1.5rem;
 				}			
+				@media ( min-width: 768px ) and ( max-width: 991px ) {
+
+					// font-size: 1.2rem;
+					padding-top: 10rem;
+				}			
 
 				&:hover {
 					color: $tiana-primary;
@@ -262,6 +267,7 @@ img {
 		}					
 	}
 	.header-social {
+	// border: 1rem solid blue;
 		padding-top: .5rem;
 
 			@media (min-width: 480px) {
@@ -309,6 +315,7 @@ img {
 	.content-wrapper {
 		background: url("/wp-content/uploads/2016/05/block-1-bg.jpg");
 		// border: 1rem solid red;
+		padding-bottom: 5rem;
 
 		.block-1-header {
 			font-family: 'Homemade Apple', cursive;
@@ -358,6 +365,181 @@ img {
 	}
 }
 
+.block-2 {
+
+	background: url("/wp-content/uploads/2016/06/workwithme-personal-coach-bg.jpg") no-repeat center center fixed;
+
+	  -webkit-background-size: cover;
+
+	  -moz-background-size: cover;
+
+	  -o-background-size: cover;
+
+	  background-size: cover;
+
+	// padding-top: 10rem;
+	// padding-bottom: 10rem;  
+
+	.content-wrapper {
+		@include linear-gradient( to right, rgba( white, .4 ), rgba( black, .7 )  ) ;
+		// border: 1px solid black;		
+		color: white;
+
+		padding-top: 10rem;
+		padding-bottom: 10rem;  
+	}
+
+	.right-text {
+
+		.lovely {
+			font-family: 'Homemade Apple', cursive;
+			font-size: 3rem;		
+		}
+
+		.special {
+			font-size: 3rem;
+			font-weight: 700;
+		}
+
+		h2 {
+			font-weight: 300;
+			font-size: 3rem;
+			line-height: 1.5;
+			color: lighten( $tiana-pink, 45% );			
+		}
+		h3 {
+			font-weight: 300;
+			font-size: 2.8rem;
+			line-height: 1.5;
+		}
+
+		.btn {
+			// width: 350px;
+			margin-top: 5rem;
+			padding-top: 2rem;
+			padding-bottom: 2rem;
+			padding-left: 5rem;
+			padding-right: 5rem;
+
+			background-color: transparent;
+			border: 1rem solid darken( $tiana-pink, 10% );
+
+			&:hover {
+				background-color: darken( $tiana-pink, 10% );
+			}
+		}
+	}
+}
+
+.block-3 {
+
+	// border-top: 2rem solid black;
+		// @include linear-gradient( to top, rgba( white, .8 ), rgba( $tiana-primary, .5 )  ) ;
+
+	.content-wrapper {
+		background: url("/wp-content/uploads/2016/05/block-1-bg.jpg");
+		// border: 1rem solid red;
+		padding-bottom: 5rem;
+
+		.block-3-header {
+			font-family: 'Homemade Apple', cursive;
+			font-size: 6rem;
+			text-align: center;
+			padding-top: 10rem;
+			padding-bottom: 5rem;
+			color: lighten( black, 40% );
+		}
+
+		.left-image {
+			padding-right: 3rem;
+			padding-top: 5rem;
+				
+			img {
+				box-shadow: 2px 2px 6px $gray-light;
+			}
+		}
+
+		.right-text {
+			padding-top: 2rem;
+
+
+
+			h3 {
+				font-weight: 300;
+				font-size: 3rem;
+				color: lighten( $tiana-pink, 30% );
+			}
+
+			ul {
+				padding-top: 5rem;
+
+				li {
+					font-size: 2rem;
+					color: lighten( gray, 15% );
+					font-weight: 500;
+				}
+			}			
+		}
+
+
+	}
+}
+
+.block-4 {
+	
+	background: url("/wp-content/uploads/2016/06/block-4-bg.jpg") no-repeat center center fixed;
+
+	  -webkit-background-size: cover;
+
+	  -moz-background-size: cover;
+
+	  -o-background-size: cover;
+
+	  background-size: cover;
+
+	  .content-wrapper {
+	  	@include background-image(linear-gradient(white 0, rgba( $tiana-primary, .7 ) 50%, rgba( darken( $tiana-primary, 10% ), .7 ) 50%));
+
+		  .text-content {
+
+		  	text-align: center;
+
+			h1 {
+				font-family: 'Homemade Apple', cursive;
+				font-size: 4rem;
+				text-align: center;
+				padding-top: 3rem;
+				padding-bottom: 5rem;
+				color: lighten( black, 40% );
+			}
+			h2 {
+				font-variant: small-caps;
+				padding-top: 9rem;
+				font-size: 4rem;
+				color: gray;
+				// border: 1px solid red;
+			}	  	
+
+		  }
+
+		  .container-fluid {
+
+		  	padding-bottom: 10rem;
+		  	padding-top: 5rem;
+
+		  	img {
+
+				@include transition(all 2.0s ease-in-out);		  		
+		  		&:hover {
+		  			@include transform(translateY(50px));
+					@include transform(scale(0.9) rotate(-3deg));
+					@include transform-origin(center top);
+					@include transform-style(preserve-3d);
+		  		}
+		  	}
+		  }
+	  }
+}
 /**
  *
  * Main Content
@@ -365,20 +547,9 @@ img {
  */
 #content {
 	display: none;
-
+	// border: 1rem solid red;
 } 
 
-.content-wrapper {
-
-	background-color: rgba( darken( $steel, 0% ), .85);
-	padding-bottom: 5rem;
-
-} 
-.content-area {
-	// background-color: $snow;
-	// border: 3px solid red;
-	padding: 0;
-}
 
 .site-main {
 	// border: 1px solid yellow;
@@ -520,10 +691,10 @@ img {
 			padding-right: 1rem;
 
 			a {
-				color: lighten( $brand-primary, 0% );
+				color: darken( $tiana-primary, 10% );
 				text-decoration: none;
 				&:hover {
-					color: lighten( white, 20% );
+					color: lighten( black, 20% );
 				}
 			}
 
@@ -536,7 +707,7 @@ img {
 			color: $gray-lighter;
 
 			a {
-				color: lighten( $brand-primary, 35% );
+				color: lighten( $tiana-primary, 55% );
 			}
 
 
@@ -615,7 +786,7 @@ img {
 		@include transition(all 1s ease-in-out);
 
 		&:hover {
-			background-color: lighten( #f13800, 15% );
+			background-color: lighten( black, 15% );
 			color: white;
 			border-color: white;
 			// background-color: #f13800;
@@ -765,6 +936,8 @@ img {
 .praise-block {
 	// border: 1px solid red;
 	margin-top: 4rem;
+	margin-bottom: 4rem;
+
 	@include background(linear-gradient( rgba( $silver, .8 ), rgba( $tiana-primary, .5 ) ) left repeat);
 	@include transition(all 1.0s ease-in-out);
 	padding-top: 3rem;
@@ -922,11 +1095,16 @@ img {
 	.the-form {
 		// border: 2px solid blue;
 		// background-color: lighten( $tiana-light-blue, 10% );
-		@include background(linear-gradient( $tiana-primary, $tiana-light-blue ) left repeat);
+		@include background(linear-gradient( darken( $tiana-primary, 15% ), white ) left repeat);
 		padding-top: 4rem;
 		padding-bottom: 4rem;
 		margin-bottom: 10rem;
 		margin-top: 5rem;
+
+		p {
+			color: black;
+
+		}
 
 		.wpcf7-textarea {
 			height: 16rem;
@@ -935,10 +1113,11 @@ img {
 			width: 20rem;
 			float: right;
 
-			background-color: $tiana-orange !important;
+			background-color: $tiana-primary !important;
+			border: 1px solid $tiana-primary;
 
 			&:hover {
-				background-color: darken( $tiana-orange, 10% ) !important;
+				background-color: darken( $tiana-primary, 10% ) !important;
 			}
 		}
 	}
@@ -1180,9 +1359,9 @@ img {
 
 #footer-main {
 	// background-color: $oil;
-	@include background(linear-gradient( lighten( $tiana-orange, 0% ), $oil ) left repeat);
+	@include background(linear-gradient( lighten( $tiana-primary, 0% ), $oil ) left repeat);
 
-	margin-top: 4rem;
+	// margin-top: 4rem;
 	// border: 3px solid red;
 	
 	.copyright {
