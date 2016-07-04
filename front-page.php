@@ -29,7 +29,7 @@ get_header(); ?>
 
 			</div>
 			
-			<div class="col-md-4">
+			<div class="col-md-4 col-sm-4 col-xs-12">
 				<article class="left-text">
 					<h2>
 						You're <br>
@@ -38,7 +38,7 @@ get_header(); ?>
 				</article>
 			</div>
 
-			<div class="col-md-8">
+			<div class="col-md-8 col-sm-8 col-xs-12">
 				
 				<article class="right-text">
 								
@@ -129,7 +129,8 @@ get_header(); ?>
 			
 			<div class="col-md-4">
 				<article class="left-image">
-					<img class="img-responsive img-circle" src="/wp-content/uploads/2016/06/block-3-left-img-650.jpg" alt="">
+					<img class="img-responsive img-circle" src="/wp-content/uploads/2016/06/block-3-left-img-2.jpg" alt="">
+					<!-- <img class="img-responsive img-circle" src="/wp-content/uploads/2016/06/block-3-left-img-650.jpg" alt=""> -->
 				</article>
 			</div>
 
@@ -177,7 +178,7 @@ get_header(); ?>
 
 	    <div class="container-fluid">
 	    	
-	    	<div class="col-md-3">
+	    	<div class="col-md-3 col-sm-3 col-xs-12">
 
 	    		<figure>
 	    			
@@ -186,7 +187,7 @@ get_header(); ?>
 	    		</figure>
 
 	    	</div>
-	    	<div class="col-md-3">
+	    	<div class="col-md-3 col-sm-3 col-xs-12">
 
 	    		<figure>
 	    			
@@ -195,7 +196,7 @@ get_header(); ?>
 	    		</figure>
 
 	    	</div>
-	    	<div class="col-md-3">
+	    	<div class="col-md-3 col-sm-3 col-xs-12">
 
 	    		<figure>
 	    			
@@ -204,7 +205,7 @@ get_header(); ?>
 	    		</figure>
 
 	    	</div>
-	    	<div class="col-md-3">
+	    	<div class="col-md-3 col-sm-3 col-xs-12">
 
 	    		<figure>
 	    			
