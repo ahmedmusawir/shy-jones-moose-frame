@@ -33,30 +33,10 @@
 			    $size = 'full'; // (thumbnail, medium, large, full or custom size)
 			?>
 
-			<style type="text/css" media="screen">
-				
-				.header-logo-social {
-					/* background-image: url("<?php echo get_stylesheet_directory_uri(); ?>/img/header-transparent-bg.png"); */
-				}
-				.navbar {
-					/* background-image: url("<?php echo get_stylesheet_directory_uri(); ?>/img/header-transparent-bg.png"); */
-				}
-
-			</style>
 			<div class="logo-container col-xs-12 col-sm-12 col-md-4 col-lg-4 ">
 	        	<a href="<?php echo esc_url( home_url( '/' ) ); ?>" rel="home"><img class="logo" src="<?php echo $siteLogo;  ?>" alt=""></a>
 	      	</div>
 	      	<div class="header-social-container col-xs-12 col-sm-12 col-md-8 col-lg-8">
-<!-- 
-	      		<div class="header-social pull-right">
-					<span><a href="#"><i class="fa fa-twitter fa-2x"></i></a></span>				
-					<span><a href="#"><i class="fa fa-facebook fa-2x"></i></a></span>				
-					<span><a href="#"><i class="fa fa-google-plus fa-2x"></i></a></span>				
-					<span><a href="#"><i class="fa fa-instagram fa-2x"></i></a></span>				
-					<span><a href="#"><i class="fa fa-pinterest fa-2x"></i></a></span>				
-				</div> 
--->
-
 
 				<div class="navbar-container">
 					<nav class="navbar navbar-inverse-not navbar-fixed-top-not" role="navigation">
